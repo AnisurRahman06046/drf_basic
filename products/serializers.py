@@ -1,5 +1,11 @@
 from rest_framework import serializers
 from . models import Products
+
+
+
+
+
+# the below serializer method is raw method to understand the concept. for production we wiil use model serializer which is coded above
 class ProductsSerializer(serializers.Serializer):
     title = serializers.CharField(max_length=75)
     qty = serializers.IntegerField()
